@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button } from '../components/Button';
-import { ArrowRight } from 'lucide-react';
 
 export const Hero: React.FC = () => {
     return (
@@ -22,9 +21,6 @@ export const Hero: React.FC = () => {
             </p>
 
             <div style={{ display: 'flex', gap: '1rem', marginTop: '1rem' }}>
-                <Button onClick={() => document.getElementById('proyectos')?.scrollIntoView({ behavior: 'smooth' })}>
-                    Ver Proyectos <ArrowRight size={18} style={{ marginLeft: '8px' }} />
-                </Button>
                 <Button variant="outline" onClick={() => document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' })}>
                     Contactar
                 </Button>
