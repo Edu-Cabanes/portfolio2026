@@ -27,7 +27,7 @@ export const Skills: React.FC = () => {
                 Habilidades <span style={{ color: 'var(--accent)' }}>Técnicas</span>
             </h2>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem', marginBottom: '4rem' }}>
                 {groups.map((group, i) => (
                     <Card key={i} padding="1.5rem">
                         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.5rem' }}>
@@ -49,6 +49,40 @@ export const Skills: React.FC = () => {
                         </div>
                     </Card>
                 ))}
+            </div>
+
+            <h2 style={{ fontSize: '2.5rem', marginBottom: '3rem', textAlign: 'center' }}>
+                Habilidades <span style={{ color: 'var(--accent)' }}>Blandas</span>
+            </h2>
+
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '1.5rem' }}>
+                <Card padding="2rem">
+                    <h3 style={{ fontSize: '1.3rem', marginBottom: '1rem', color: 'var(--accent)' }}>Adaptabilidad Grupal</h3>
+                    <p style={{ lineHeight: '1.6', color: 'var(--foreground-muted)' }}>
+                        Capacidad para integrarme rápidamente en equipos de trabajo, entendiendo rápidamente las dinámicas del grupo.
+                    </p>
+                </Card>
+
+                <Card padding="2rem">
+                    <h3 style={{ fontSize: '1.3rem', marginBottom: '1rem', color: 'var(--accent)' }}>Aprendizaje Exponencial</h3>
+                    <p style={{ lineHeight: '1.6', color: 'var(--foreground-muted)' }}>
+                        Enfoque en la absorción profunda de conocimientos técnicos. Aunque priorizo entender bien las bases al inicio, mi curva de progresión y autonomía se acelera drásticamente una vez dominado el contexto.
+                    </p>
+                </Card>
+
+                <Card padding="2rem">
+                    <h3 style={{ fontSize: '1.3rem', marginBottom: '1rem', color: 'var(--accent)' }}>Resolución y Optimización</h3>
+                    <p style={{ lineHeight: '1.6', color: 'var(--foreground-muted)' }}>
+                        Pasión por desgranar problemas complejos y encontrar la forma más eficiente de resolverlos, buscando siempre mejorar los procesos existentes.
+                    </p>
+                </Card>
+
+                <Card padding="2rem">
+                    <h3 style={{ fontSize: '1.3rem', marginBottom: '1rem', color: 'var(--accent)' }}>Mentalidad Crítica / Curiosidad Técnica</h3>
+                    <p style={{ lineHeight: '1.6', color: 'var(--foreground-muted)' }}>
+                        No me conformo con que el código funcione, busco entender el "por qué" y explorar si existe una mejor implementación.
+                    </p>
+                </Card>
             </div>
         </section>
     );
