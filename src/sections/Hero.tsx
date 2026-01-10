@@ -8,15 +8,15 @@ export const Hero: React.FC = () => {
     return (
         <section className="section hero-container">
             <div style={{ flex: 1, textAlign: 'inherit' }}>
-                <h1 style={{ fontSize: '3.5rem', fontWeight: '800', marginBottom: '1.5rem', lineHeight: '1.1', animation: 'fadeInUp 0.8s ease' }}>
+                <h1 style={{ fontWeight: '800', marginBottom: '1.5rem', lineHeight: '1.1', animation: 'fadeInUp 0.8s ease' }}>
                     Junior Software Developer | <span style={{ color: 'var(--accent)' }}>Especializándome en React e Integración de IA</span>
                 </h1>
 
-                <p style={{ fontSize: '1.25rem', marginBottom: '2rem', lineHeight: '1.6', color: 'var(--foreground-muted)', animation: 'fadeInUp 1s ease' }}>
+                <p style={{ marginBottom: '2rem', lineHeight: '1.6', color: 'var(--foreground-muted)', animation: 'fadeInUp 1s ease' }}>
                     Estudiante de 2º de DAM enfocado en el desarrollo de soluciones eficientes. Mi trabajo se centra en el registro inteligente de datos, el análisis dinámico de los mismos y la implementación de modelos de Inteligencia Artificial para optimizar la experiencia de usuario.
                 </p>
 
-                <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center', justifyContent: 'inherit', animation: 'fadeInUp 1.2s ease' }}>
+                <div className="social-container" style={{ display: 'flex', gap: '1.5rem', alignItems: 'center', justifyContent: 'inherit', animation: 'fadeInUp 1.2s ease' }}>
                     <Button variant="outline" onClick={() => document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' })}>
                         Contactar
                     </Button>
@@ -48,6 +48,7 @@ export const Hero: React.FC = () => {
                 <img
                     src={profileImg}
                     alt="Edu Cabanes"
+                    className="hero-image"
                     style={{
                         width: '100%',
                         maxWidth: '550px',

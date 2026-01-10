@@ -4,11 +4,11 @@ import { Card } from '../components/Card';
 export const About: React.FC = () => {
     return (
         <section id="sobre-mi" className="section">
-            <h2 style={{ fontSize: '2.5rem', marginBottom: '3rem', textAlign: 'center' }}>
+            <h2 style={{ marginBottom: '3rem', textAlign: 'center' }}>
                 Sobre <span style={{ color: 'var(--accent)' }}>Mí</span>
             </h2>
 
-            <Card padding="2.5rem" style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center', marginBottom: '3rem' }}>
+            <Card className="responsive-card-padding" style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center', marginBottom: '3rem' }}>
                 <p style={{ fontSize: '1.2rem', lineHeight: '1.8', color: 'var(--foreground)' }}>
                     Como estudiante de último año de Desarrollo de Aplicaciones Multiplataforma (DAM), he centrado mi aprendizaje en el ecosistema de React y las nuevas posibilidades que ofrece la IA.
                 </p>
@@ -17,11 +17,11 @@ export const About: React.FC = () => {
                 </p>
             </Card>
 
-            <h2 style={{ fontSize: '2.5rem', marginBottom: '3rem', textAlign: 'center' }}>
+            <h2 style={{ marginBottom: '3rem', textAlign: 'center' }}>
                 Educación
             </h2>
 
-            <Card padding="2.5rem" style={{ maxWidth: '800px', margin: '0 auto' }}>
+            <Card className="responsive-card-padding" style={{ maxWidth: '800px', margin: '0 auto' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '1rem', marginBottom: '1.5rem' }}>
                     <div>
                         <h3 style={{ fontSize: '1.5rem', color: 'var(--accent)' }}>Grado Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)</h3>

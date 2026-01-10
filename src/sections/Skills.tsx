@@ -23,11 +23,11 @@ export const Skills: React.FC = () => {
 
     return (
         <section className="section">
-            <h2 style={{ fontSize: '2.5rem', marginBottom: '3rem', textAlign: 'center' }}>
+            <h2 style={{ marginBottom: '3rem', textAlign: 'center' }}>
                 Habilidades <span style={{ color: 'var(--accent)' }}>Técnicas</span>
             </h2>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem', marginBottom: '4rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', marginBottom: '4rem' }}>
                 {groups.map((group, i) => (
                     <Card key={i} padding="1.5rem">
                         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.5rem' }}>
@@ -51,11 +51,11 @@ export const Skills: React.FC = () => {
                 ))}
             </div>
 
-            <h2 style={{ fontSize: '2.5rem', marginBottom: '3rem', textAlign: 'center' }}>
+            <h2 style={{ marginBottom: '3rem', textAlign: 'center' }}>
                 Habilidades <span style={{ color: 'var(--accent)' }}>Blandas</span>
             </h2>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '1.5rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
                 <Card padding="2rem">
                     <h3 style={{ fontSize: '1.3rem', marginBottom: '1rem', color: 'var(--accent)' }}>Adaptabilidad Grupal</h3>
                     <p style={{ lineHeight: '1.6', color: 'var(--foreground-muted)' }}>

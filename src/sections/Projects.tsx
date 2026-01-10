@@ -31,8 +31,8 @@ export const Projects: React.FC = () => {
                 <div className="projects-grid" style={{ animation: 'fadeIn 0.6s ease' }}>
                     <Card className="project-card" padding="2rem">
                         <div className="project-header">
-                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.5rem' }}>
-                                <h3>Core Architecture: Interactive SaaS Education Platform</h3>
+                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1rem', flexWrap: 'wrap', gap: '0.75rem' }}>
+                                <h3 style={{ margin: 0, flex: '1 1 250px', textAlign: 'left' }}>Core Architecture: Interactive SaaS Education Platform</h3>
                                 <span style={{
                                     background: 'rgba(255, 170, 0, 0.1)',
                                     color: '#ffaa00',
@@ -41,7 +41,8 @@ export const Projects: React.FC = () => {
                                     fontSize: '0.7rem',
                                     fontWeight: 'bold',
                                     border: '1px solid rgba(255, 170, 0, 0.2)',
-                                    whiteSpace: 'nowrap'
+                                    whiteSpace: 'nowrap',
+                                    display: 'inline-block'
                                 }}>
                                     EN PROCESO
                                 </span>
@@ -96,7 +97,7 @@ export const Projects: React.FC = () => {
                                         <p>Control de acceso basado en tokens y protección de rutas privadas.</p>
                                     </div>
 
-                                    <div style={{ display: 'flex', gap: '1rem', marginTop: '2rem' }}>
+                                    <div className="project-actions" style={{ display: 'flex', gap: '1rem', marginTop: '2rem' }}>
                                         <Button
                                             variant="secondary"
                                             onClick={() => setShowDetails(false)}

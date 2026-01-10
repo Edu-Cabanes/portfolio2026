@@ -10,10 +10,21 @@
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .projects-section {
+        padding: 2rem 1rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
 }
 
 .project-card {
@@ -48,9 +59,9 @@
     background: rgba(var(--accent-rgb), 0.1);
     color: var(--accent);
     padding: 0.25rem 0.75rem;
-    borderRadius: 6px;
-    fontSize: 0.75rem;
-    fontWeight: 500;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 500;
 }
 
 .project-details-overlay {
