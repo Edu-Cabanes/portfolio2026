@@ -13,6 +13,9 @@ function App() {
       <Skills />
       <About />
       <Contact />
+      <footer style={{ textAlign: 'center', padding: '4rem 0 2rem', borderTop: '1px solid var(--card-border)', marginTop: '4rem', color: 'var(--text-muted)', fontSize: '0.9rem' }}>
+        <p>© {new Date().getFullYear()} Edu Cabanes. Casi todos los derechos reservados.</p>
+      </footer>
     </main>
   )
 }

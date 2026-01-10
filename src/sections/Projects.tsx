@@ -31,7 +31,21 @@ export const Projects: React.FC = () => {
                 <div className="projects-grid" style={{ animation: 'fadeIn 0.6s ease' }}>
                     <Card className="project-card" padding="2rem">
                         <div className="project-header">
-                            <h3>Core Architecture: Interactive SaaS Education Platform</h3>
+                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.5rem' }}>
+                                <h3>Core Architecture: Interactive SaaS Education Platform</h3>
+                                <span style={{
+                                    background: 'rgba(255, 170, 0, 0.1)',
+                                    color: '#ffaa00',
+                                    padding: '0.3rem 0.8rem',
+                                    borderRadius: '20px',
+                                    fontSize: '0.7rem',
+                                    fontWeight: 'bold',
+                                    border: '1px solid rgba(255, 170, 0, 0.2)',
+                                    whiteSpace: 'nowrap'
+                                }}>
+                                    EN PROCESO
+                                </span>
+                            </div>
                             <p className="project-main-desc">
                                 Desarrollo de una arquitectura escalable para plataformas educativas
                                 que requieren un control de datos y asistencia inteligente.
@@ -93,7 +107,7 @@ export const Projects: React.FC = () => {
                                         <Button
                                             variant="secondary"
                                             onClick={() => setShowProjects(false)}
-                                            style={{ opacity: 0.6 }}
+                                            style={{ flex: 1 }}
                                         >
                                             Ocultar todo
                                         </Button>

@@ -6,7 +6,7 @@
   --card-bg: rgba(255, 255, 255, 0.05);
   --card-border: rgba(255, 255, 255, 0.1);
   --text-muted: #a0a0a0;
-  
+
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -42,11 +42,14 @@ a {
   color: var(--accent);
   text-decoration: inherit;
 }
+
 a:hover {
   color: #60a5fa;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   line-height: 1.1;
   margin: 0;
 }
@@ -87,4 +90,35 @@ p {
 .btn-primary:hover {
   transform: translateY(-2px);
   box-shadow: 0 0 20px var(--accent-glow);
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80vh;
+  gap: 4rem;
+  padding: 2rem 0;
+}
+
+@media (max-width: 968px) {
+  .hero-container {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 2rem;
+    padding: 4rem 0;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
