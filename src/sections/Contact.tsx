@@ -1,6 +1,5 @@
 import React from 'react';
 import { Github, Linkedin, Mail } from 'lucide-react';
-import { Button } from '../components/Button';
 
 export const Contact: React.FC = () => {
     return (
@@ -21,14 +20,6 @@ export const Contact: React.FC = () => {
                 </a>
             </div>
 
-            <div style={{ maxWidth: '500px', margin: '0 auto' }}>
-                <Button
-                    style={{ width: '100%' }}
-                    onClick={() => window.location.href = 'mailto:educabanes54@gmail.com?subject=Contacto desde Portfolio'}
-                >
-                    Enviar un mensaje directo
-                </Button>
-            </div>
         </section>
     );
 };
