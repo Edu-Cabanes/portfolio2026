@@ -5,19 +5,19 @@ import { Code2, Cloud, Wrench } from 'lucide-react';
 export const Skills: React.FC = () => {
     const groups = [
         {
-            title: 'Front-end',
+            title: 'Frontend & UI',
             icon: <Code2 size={24} color="var(--accent)" />,
-            skills: ['React', 'TypeScript', 'Vite', 'Vanilla CSS']
+            skills: ['React', 'TypeScript', 'Vite', 'CSS Modules', 'Diseño Responsivo']
         },
         {
-            title: 'Cloud & Backend',
+            title: 'Data & Cloud',
             icon: <Cloud size={24} color="var(--accent)" />,
-            skills: ['Firebase Auth', 'Firestore', 'Hosting']
+            skills: ['Firebase (Auth & Firestore)', 'Registro de datos asíncrono', 'Análisis de datos en tiempo real']
         },
         {
-            title: 'Tools & Others',
+            title: 'Modern Dev',
             icon: <Wrench size={24} color="var(--accent)" />,
-            skills: ['Git', 'Prompt Engineering', 'Clean Code']
+            skills: ['IA Prompt Engineering', 'Git', 'Metodologías Ágiles', 'Desarrollo orientado a la eficiencia']
         }
     ];
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card } from '../components/Card';
-import { Database, Shield, Brain, BarChart3, ExternalLink } from 'lucide-react';
+import { Database, Shield, Brain, ExternalLink } from 'lucide-react';
 
 export const Projects: React.FC = () => {
     return (
@@ -12,35 +12,31 @@ export const Projects: React.FC = () => {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '2rem' }}>
                 <Card className="project-card" padding="2rem">
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start', marginBottom: '1.5rem' }}>
-                        <h3 style={{ fontSize: '1.5rem' }}>Interactive SaaS Education Platform</h3>
+                        <h3 style={{ fontSize: '1.5rem' }}>Core Architecture: Interactive SaaS Education Platform</h3>
                         <ExternalLink size={20} color="var(--text-muted)" />
                     </div>
 
                     <p style={{ marginBottom: '2rem' }}>
-                        Plataforma completa de gestión de aprendizaje que integra tutorización mediante Inteligencia Artificial.
+                        Desarrollo de una arquitectura escalable para plataformas educativas que requieren un control de datos y asistencia inteligente.
                     </p>
 
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
                             <Shield size={18} color="var(--accent)" />
-                            <span>Auth robusta y base de datos con Firebase</span>
+                            <span><strong>Registro y Análisis:</strong> Implementación de flujos de datos para el seguimiento detallado del progreso.</span>
                         </div>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
                             <Brain size={18} color="var(--accent)" />
-                            <span>Integración de modelos IA (LLMs)</span>
+                            <span><strong>Inteligencia Artificial:</strong> Integración de un motor de asistencia basado en IA.</span>
                         </div>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
                             <Database size={18} color="var(--accent)" />
-                            <span>Arquitectura de servicios asíncronos</span>
-                        </div>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                            <BarChart3 size={18} color="var(--accent)" />
-                            <span>Dashboard de analíticas dinámicas</span>
+                            <span><strong>Infraestructura:</strong> Gestión de estados globales y persistencia en tiempo real con Firebase.</span>
                         </div>
                     </div>
 
                     <div style={{ display: 'flex', gap: '0.5rem', marginTop: '2rem' }}>
-                        {['React', 'TypeScript', 'Firebase', 'OpenAI'].map(tag => (
+                        {['React', 'Firebase', 'IA', 'State Management'].map(tag => (
                             <span key={tag} style={{
                                 background: 'rgba(255,255,255,0.05)',
                                 padding: '0.25rem 0.75rem',

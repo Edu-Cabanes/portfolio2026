@@ -9,28 +9,16 @@ export const Hero: React.FC = () => {
             flexDirection: 'column',
             alignItems: 'center',
             textAlign: 'center',
-            minHeight: '80vh',
+            minHeight: '70vh',
             justifyContent: 'center',
             gap: '1.5rem'
         }}>
-            <div style={{
-                background: 'var(--accent-glow)',
-                color: 'var(--accent)',
-                padding: '0.5rem 1rem',
-                borderRadius: '20px',
-                fontSize: '0.875rem',
-                fontWeight: '600',
-                border: '1px solid var(--accent)'
-            }}>
-                Disponible para Febrero 2026
-            </div>
-
-            <h1 style={{ fontSize: '4rem', fontWeight: '800', maxWidth: '800px' }}>
-                Junior <span style={{ color: 'var(--accent)' }}>Software Developer</span>
+            <h1 style={{ fontSize: '3.5rem', fontWeight: '800', maxWidth: '900px' }}>
+                Junior Software Developer | <span style={{ color: 'var(--accent)' }}>Especializándome en React e Integración de IA</span>
             </h1>
 
-            <p style={{ fontSize: '1.25rem', maxWidth: '600px', margin: '0 auto' }}>
-                Estudiante de 2º de DAM enfocado en Clean Code, arquitecturas modernas y aprendizaje continuo.
+            <p style={{ fontSize: '1.25rem', maxWidth: '800px', margin: '0 auto', lineHeight: '1.6' }}>
+                Estudiante de 2º de DAM enfocado en el desarrollo de soluciones eficientes. Mi trabajo se centra en el registro inteligente de datos, el análisis dinámico de los mismos y la implementación de modelos de Inteligencia Artificial para optimizar la experiencia de usuario.
             </p>
 
             <div style={{ display: 'flex', gap: '1rem', marginTop: '1rem' }}>
