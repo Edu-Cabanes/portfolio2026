@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from '../components/Button';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail, Download } from 'lucide-react';
 
 import profileImg from '../assets/profile.jpg';
 
@@ -17,9 +17,12 @@ export const Hero: React.FC = () => {
                 </p>
 
                 <div className="social-container" style={{ display: 'flex', gap: '1.5rem', alignItems: 'center', justifyContent: 'inherit', animation: 'fadeInUp 1.2s ease' }}>
-                    <Button variant="outline" onClick={() => document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' })}>
-                        Contactar
-                    </Button>
+                    <a href="/CV_Eduardo_Cabanes.pdf" download style={{ textDecoration: 'none' }}>
+                        <Button variant="outline" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', cursor: 'pointer' }}>
+                            <Download size={18} />
+                            Descargar CV
+                        </Button>
+                    </a>
                     <div style={{ display: 'flex', gap: '1rem', marginLeft: '0.5rem' }}>
                         <a href="https://www.linkedin.com/in/edu-cabanes-a90378192/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--foreground-muted)', transition: 'color 0.2s' }} onMouseOver={(e) => e.currentTarget.style.color = 'var(--accent)'} onMouseOut={(e) => e.currentTarget.style.color = 'var(--foreground-muted)'}>
                             <Linkedin size={24} />
