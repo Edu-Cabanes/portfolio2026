@@ -1,73 +1,32 @@
-# React + TypeScript + Vite
+# Eduardo Cabanes · Desarrollador Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio personal — **React 19 + TypeScript + Vite**.
 
-Currently, two official plugins are available:
+## Sobre mí
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Estudiante de 2º de DAM. Trabajo con **Next.js, TypeScript y Supabase** construyendo aplicaciones web completas, desde la base de datos hasta la interfaz. Me motiva el desarrollo de producto real: código limpio, testing y entrega a producción.
 
-## React Compiler
+## Proyectos
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🟢 GreenGood — [greengood.es](https://greengood.es)
 
-## Expanding the ESLint configuration
+Web corporativa para una empresa de paisajismo en Salamanca. Next.js 16, Tailwind CSS 4, SEO local optimizado, blog y catálogo de servicios. **En producción.**
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 🐾 CanisPath — En desarrollo
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Plataforma full-stack de adiestramiento canino con cursos online y planificador automático de entrenos. **Supabase (Auth + PostgreSQL + RLS) · Stripe · Vitest + Playwright.** Diseñada con Server Components + Server Actions.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+→ [GitHub](https://github.com/Edu-Cabanes)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Stack
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+`React` `Next.js` `TypeScript` `Tailwind CSS` `Supabase` `PostgreSQL` `Stripe` `Vitest` `Playwright` `Zod` `Vite` `Netlify`
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Desarrollo local
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev     # http://localhost:5173
+npm run build   # build de producción
+npm run lint    # ESLint + TypeScript
 ```

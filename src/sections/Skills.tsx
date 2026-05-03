@@ -7,22 +7,22 @@ export const Skills: React.FC = () => {
         {
             title: 'Frontend & UI',
             icon: <Code2 size={24} color="var(--accent)" />,
-            skills: ['React', 'TypeScript', 'Vite', 'CSS Modules', 'Diseño Responsivo']
+            skills: ['React', 'Next.js (App Router)', 'TypeScript', 'Tailwind CSS', 'shadcn/ui', 'Diseño Responsivo']
         },
         {
-            title: 'Data & Cloud',
+            title: 'Backend & Datos',
             icon: <Cloud size={24} color="var(--accent)" />,
-            skills: ['Firebase (Auth & Firestore)', 'Registro de datos asíncrono', 'Análisis de datos en tiempo real']
+            skills: ['Supabase (Auth + PostgreSQL)', 'Row Level Security', 'Server Actions', 'Stripe (Checkout)', 'Resend (Email)', 'Zod (Validación)']
         },
         {
-            title: 'Modern Dev',
+            title: 'Herramientas & Testing',
             icon: <Wrench size={24} color="var(--accent)" />,
-            skills: ['IA Prompt Engineering', 'Git', 'Metodologías Ágiles', 'Desarrollo orientado a la eficiencia']
+            skills: ['Vitest', 'Playwright (E2E)', 'Testing Library', 'Git & GitHub', 'Netlify / Vercel', 'ESLint + Prettier']
         }
     ];
 
     return (
-        <section className="section">
+        <section id="skills" className="section">
             <h2 style={{ marginBottom: '3rem', textAlign: 'center' }}>
                 Habilidades <span style={{ color: 'var(--accent)' }}>Técnicas</span>
             </h2>

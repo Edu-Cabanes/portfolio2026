@@ -1,7 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --background: #0a0a0a;
   --foreground: #ededed;
+  --foreground-muted: #a0a0a0;
   --accent: #3b82f6;
+  --accent-rgb: 59, 130, 246;
   --accent-glow: rgba(59, 130, 246, 0.3);
   --card-bg: rgba(255, 255, 255, 0.05);
   --card-border: rgba(255, 255, 255, 0.1);
@@ -155,6 +161,21 @@ p {
   .project-actions {
     flex-direction: column !important;
     gap: 0.75rem !important;
+  }
+}
+
+/* ── Navbar responsive ── */
+@media (max-width: 768px) {
+  .nav-desktop {
+    display: none !important;
+  }
+
+  .nav-mobile-btn {
+    display: block !important;
+  }
+
+  .nav-mobile-menu {
+    display: flex !important;
   }
 }
 

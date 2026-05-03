@@ -10,10 +10,10 @@ export const About: React.FC = () => {
 
             <Card className="responsive-card-padding" style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center', marginBottom: '3rem' }}>
                 <p style={{ fontSize: '1.2rem', lineHeight: '1.8', color: 'var(--foreground)' }}>
-                    Como estudiante de último año de Desarrollo de Aplicaciones Multiplataforma (DAM), he centrado mi aprendizaje en el ecosistema de React y las nuevas posibilidades que ofrece la IA.
+                    Estudiante de último año de Desarrollo de Aplicaciones Multiplataforma (DAM), he centrado mi aprendizaje en el ecosistema React/Next.js y el desarrollo full-stack con TypeScript.
                 </p>
                 <p style={{ fontSize: '1.2rem', lineHeight: '1.8', marginTop: '1.5rem', color: 'var(--foreground)' }}>
-                    Me apasiona transformar datos en información útil mediante dashboards visuales y crear herramientas que no solo funcionen, sino que aporten valor al usuario mediante el análisis de comportamiento.
+                    Ya he entregado un proyecto real a producción — la web corporativa de GreenGood — y actualmente desarrollo CanisPath, una plataforma completa con autenticación, pagos Stripe, base de datos PostgreSQL y testing automatizado.
                 </p>
             </Card>
 
@@ -39,7 +39,7 @@ export const About: React.FC = () => {
                     </span>
                 </div>
                 <p style={{ fontSize: '1.1rem', lineHeight: '1.6', color: 'var(--foreground-muted)' }}>
-                    <strong>Dato Clave:</strong> Finalizando el segundo curso con especial interés en arquitecturas web y análisis de datos.
+                    Finalizando el segundo curso. Compaginando los estudios con el desarrollo de proyectos reales para ganar experiencia práctica en arquitecturas web modernas.
                 </p>
             </Card>
         </section>
